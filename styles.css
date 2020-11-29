@@ -1,0 +1,185 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* border:1px solid red */
+
+}
+header {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+.contenedor{
+    width: 100%;
+    background: #fc6404;
+}
+
+nav {
+  width: 60%;
+}
+
+.ul-elementos {
+font-size: 18px;
+  font-family: 'Noto Sans JP', sans-serif;
+  display: flex;
+  justify-content: space-evenly ;
+  justify-items: auto;
+}
+
+.ul-elementos li {
+  list-style: none;
+}
+.ul-elementos li a {
+  
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.Logotipo{
+    font-size: 50px;
+    font-family: 'Nerko One', cursive; 
+   
+    
+}
+.section-main{
+    font-family: 'Roboto', sans-serif;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: -500px;
+}
+/*
+.imagen-main{
+    position: absolute;
+    top:0%;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    background-image:url("../imagen/naranja.jpg") ;
+    z-index: -1;
+}*/
+.pizza{
+    background-image:url("../imagen/pizza.jpg") ;
+    width: 115px;
+    height: 92px;
+}
+.section-main h1{
+    font-size: 50px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.section-main h3{
+    font-size: 35px;
+    position: relative;    
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.section-main a{
+    /*border: 2px solid blanchedalmond;*/
+    background: black;
+    color: blanchedalmond;
+    position: relative;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.secction-footer{
+    
+    font-family: 'Roboto', sans-serif;
+text-align: center;
+
+align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0px;
+}
+
+.politicas{
+    font-size: 18px;
+    width: 71%;
+}
+.redes{
+    width: 0px;
+    height: autopx;
+    text-align: left;
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.secction-footer-div{
+    flex-direction: column;
+    height:auto;
+    width: auto;
+}
+
+.secction-footer-div button{
+    background: none;
+    margin: 0px;
+    border: none;   
+    cursor: pointer;
+    font-size: 10px;
+   
+}
+.secction-footer-div button i{
+    border: none;   
+    cursor: pointer;
+    font-size: 40px;
+    color: black;
+    padding-top: 10px;
+}
+footer h3{
+   position: relative;
+   padding: 15px;
+   font-size: 15px;
+   border-top: 1px solid black;
+}
+@media screen and (max-width: 1262px){
+   header{
+    flex-direction: column;
+   }
+}
+@media screen and (max-width: 643px){
+    .ul-elementos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .ul-elementos li{
+    margin: 2%;
+    border: 2px solid black;
+    }
+    .ul-elementos li a{
+        display: block;
+        margin: 1%;
+        }
+    nav {
+    width: 90%;
+    }
+}
+@media screen and (max-width: 500px){
+    .secction-footer{
+        display: block;
+        height:auto;
+        width: auto;
+    }
+    .politicas{
+        width: 100%;
+        margin: 2%;
+    }
+    .redes{
+        margin: 2%;
+    }
+}
